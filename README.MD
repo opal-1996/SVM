@@ -57,7 +57,13 @@ $$
 \end{aligned}
 $$
 
-We define the margin of the linear classifier as the minimum distance of a point from the separating hyperplane: $\gamma_i^* = min_{x_i}[\frac{y_i(w^Tx_i + b)}{||w||}] = \frac{y_i^*(w^Tx_i^* + b)}{||w||}$
+We define the margin of the linear classifier as the minimum distance of a point from the separating hyperplane: 
+
+$$
+\begin{aligned}
+\gamma_i^* = min_{x_i}[\frac{y_i(w^Tx_i + b)}{||w||}] = \frac{y_i^*(w^Tx_i^* + b)}{||w||}
+\end{aligned}
+$$
 
 Hard margin classifier:
 $$
