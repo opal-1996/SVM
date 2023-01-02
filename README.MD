@@ -137,16 +137,11 @@ $$
 $$
 </p>
 
-
-
-, consider 
-$K(\vec{u}, \vec{v})=\left(1+\vec{u}^T \vec{v}\right)^2$
+Consider $K(\vec{u}, \vec{v})=\left(1+\vec{u}^T \vec{v}\right)^2$
 . We wish to show that this is a kernel, i.e., that 
 $K(\vec{u}, \vec{v})=\phi(\vec{u})^T \phi(\vec{v})$ for some $\phi$. 
 
-Consider $\phi(u) = (1, u_1^2, \sqrt{2}u_1u_2, u_2^2, \sqrt{2}u_1, \sqrt{2}u_2)$. Then:
-
-$K(\vec{u}, \vec{v})=\left(1+\vec{u}^T \vec{v}\right)^2$ = $1+u_1^2 v_1^2+2 u_1 v_1 u_2 v_2+u_2^2 v_2^2+2 u_1 v_1+2 u_2 v_2 = (1, u_1^2, \sqrt{2}u_1u_2, u_2^2, \sqrt{2}u_1, \sqrt{2}u_2)^T (1, v_1^2, \sqrt{2}v_1v_2, v_2^2, \sqrt{2}v_1, \sqrt{2}v_2)=\phi(\vec{u})^T \phi(\vec{v})$
+Consider $\phi(u) = (1, u_1^2, \sqrt{2}u_1u_2, u_2^2, \sqrt{2}u_1, \sqrt{2}u_2)$. Then: $K(\vec{u}, \vec{v})=\left(1+\vec{u}^T \vec{v}\right)^2$ = $1+u_1^2 v_1^2+2 u_1 v_1 u_2 v_2+u_2^2 v_2^2+2 u_1 v_1+2 u_2 v_2 = (1, u_1^2, \sqrt{2}u_1u_2, u_2^2, \sqrt{2}u_1, \sqrt{2}u_2)^T (1, v_1^2, \sqrt{2}v_1v_2, v_2^2, \sqrt{2}v_1, \sqrt{2}v_2)=\phi(\vec{u})^T \phi(\vec{v})$
 
 Examples of SVM kernels:
 
