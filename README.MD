@@ -161,7 +161,8 @@ where d is the degree of the polynomial
 
 ![image](Image/../Images/gaussian.jpeg)
 
-* Gaussian radial basis function (RBF, general-purpose kernel): $k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\exp \left(-\gamma\left\|\mathbf{x}_{\mathbf{i}}-\mathbf{x}_{\mathbf{j}}\right\|^2\right)$ for $\gamma > 0$
+* Gaussian radial basis function (RBF, general-purpose kernel): 
+  $k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\exp \left(-\gamma\left\|\mathbf{x}_{\mathbf{i}}-\mathbf{x}_{\mathbf{j}}\right\|^2\right)$ for $\gamma > 0$
 
 * Laplace RBF kernel (general-purpose kernel): $k(x, y)=\exp \left(-\frac{\|x-y\|}{\sigma}\right)$
 
