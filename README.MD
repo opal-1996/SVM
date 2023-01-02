@@ -128,7 +128,17 @@ Now suppose we decide to map each data point to a higher dimensional space via s
 Example: Quadratic Kernel
 
 For 2-dimensional vectors 
-$\vec{u}=\left(\begin{array}{ll}u_1 & u_2\end{array}\right), \vec{v}=\left(\begin{array}{ll}v_1 & v_2\end{array}\right)$
+<p>
+$$
+\begin{aligned}
+\vec{u}=\left(\begin{array}{ll}u_1 & u_2\end{array}\right)\\
+\vec{v}=\left(\begin{array}{ll}v_1 & v_2\end{array}\right)\\
+\end{aligned}
+$$
+</p>
+
+
+
 , consider 
 $K(\vec{u}, \vec{v})=\left(1+\vec{u}^T \vec{v}\right)^2$
 . We wish to show that this is a kernel, i.e., that 
