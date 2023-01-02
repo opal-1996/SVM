@@ -145,7 +145,15 @@ Consider $\phi(u) = (1, u_1^2, \sqrt{2}u_1u_2, u_2^2, \sqrt{2}u_1, \sqrt{2}u_2)$
 
 Examples of SVM kernels:
 
-* Polynomial kernel (e.g., image processing): $k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\left(\mathbf{x}_{\mathbf{i}} \cdot \mathbf{x}_{\mathbf{j}}+1\right)^d<$, where d is the degree of the polynomial
+* Polynomial kernel (e.g., image processing): 
+<p>
+$$
+\begin{aligned}
+k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\left(\mathbf{x}_{\mathbf{i}} \cdot \mathbf{x}_{\mathbf{j}}+1\right)^d
+\end{aligned}
+$$
+</p>
+where d is the degree of the polynomial
 
 ![image](Images/polynomial.jpg)
 
