@@ -61,7 +61,7 @@ We define the margin of the linear classifier as the minimum distance of a point
 
 $$
 \begin{aligned}
-\gamma_i^* = min_{x_i}[\frac{y_i(w^Tx_i + b)}  {||w||}] = \frac{y_i^*(w^Tx_i^* + b)}{||w||}
+\gamma_i^* = min_{x_i}[\frac{y_i(w^Tx_i + b)}{||w||}] = \frac{y_i^*(w^Tx_i^* + b)}{||w||}
 \end{aligned}
 $$
 
