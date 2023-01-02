@@ -57,16 +57,9 @@ $$
 \end{aligned}
 $$
 
-We define the margin of the linear classifier as the minimum distance of a point from the separating hyperplane:
-
-$$
-\begin{aligned}
-\gamma_i^* = min_{x_i}[\frac{y_i(w^Tx_i + b)}{||w||}] = \frac{y_i^*(w^Tx_i^* + b)}{||w||}
-\end{aligned}
-$$
+We define the margin of the linear classifier as the minimum distance of a point from the separating hyperplane: $\gamma_i^* = min_{x_i}[\frac{y_i(w^Tx_i + b)}{||w||}] = \frac{y_i^*(w^Tx_i^* + b)}{||w||}$
 
 Hard margin classifier:
-
 $$
 \begin{aligned}
 Objective\ function: min_{w, b} \frac{||w||^2}{2} \\
@@ -75,7 +68,6 @@ s.t.: y_i(w^Tx_i + b) \geq 1
 $$
 
 Soft margin classifier:
-
 $$
 \begin{aligned}
 Objective\ function: min_{w, b} [\frac{||w||^2}{2} + C\sum_i^n \epsilon_i^k] \\
