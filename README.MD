@@ -53,7 +53,7 @@ The distance from a given data point to the hyperplane:
 
 $$
 \begin{aligned}
-\gamma_i = \frac{y_i(w^Tx_i + b)}{||w||}
+\gamma_i = \frac{y_i(w^Tx_i + b)}{\lVert w \rVert}
 \end{aligned}
 $$
 
@@ -61,14 +61,14 @@ We define the margin of the linear classifier as the minimum distance of a point
 
 $$
 \begin{aligned}
-\gamma_i^* = min_{x_i}[\frac{y_i(w^Tx_i + b)}{||w||}] = \frac{y_i^*(w^Tx_i^* + b)}{||w||}
+\gamma_i^* = min_{x_i}\frac{y_i(w^Tx_i + b)}{\lVert w \rVert} = \frac{y_i^*(w^Tx_i^* + b)}{\lVert w \rVert}
 \end{aligned}
 $$
 
 Hard margin classifier:
 $$
 \begin{aligned}
-Objective\ function: min_{w, b} \frac{||w||^2}{2} \\
+Objective\ function: min_{w, b} \frac{\lVert w \rVert^2}{2} \\
 s.t.: y_i(w^Tx_i + b) \geq 1
 \end{aligned}
 $$
@@ -76,7 +76,7 @@ $$
 Soft margin classifier:
 $$
 \begin{aligned}
-Objective\ function: min_{w, b} [\frac{||w||^2}{2} + C\sum_i^n \epsilon_i^k] \\
+Objective\ function: min_{w, b} [\frac{\lVert w \rVert^2}{2} + C\sum_i^n \epsilon_i^k] \\
 s.t.: y_i(w^Tx_i + b) \geq 1 - \epsilon_i,\ where\ \epsilon_i \geq 0
 \end{aligned}
 $$
