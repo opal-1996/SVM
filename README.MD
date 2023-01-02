@@ -65,21 +65,21 @@ We define the margin of the linear classifier as the minimum distance of a point
 \end{aligned}
 $$</p>
 
-<!-- Hard margin classifier:
+Hard margin classifier:
 $$
 \begin{aligned}
 Objective\ function: min_{w, b} \frac{\lVert w \rVert^2}{2} \\
 s.t.: y_i(w^Tx_i + b) \geq 1
 \end{aligned}
-$$ -->
+$$
 
-<!-- Soft margin classifier:
+Soft margin classifier:
 $$
 \begin{aligned}
 Objective\ function: min_{w, b} [\frac{\lVert w \rVert^2}{2} + C\sum_i^n \epsilon_i^k] \\
 s.t.: y_i(w^Tx_i + b) \geq 1 - \epsilon_i,\ where\ \epsilon_i \geq 0
 \end{aligned}
-$$ -->
+$$
 
 Where C an k are constants for balancing the cost of misclassification. If k=1 then loss is named as `Hinge Loss` and if k=2 then it's called `Quadratic Loss`. For example, the figure below displays the hinge loss function($\lambda_i$ represents $w^Tx_i + b$).
 
