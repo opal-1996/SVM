@@ -81,7 +81,7 @@ s.t.: y_i(w^Tx_i + b) \geq 1 - \epsilon_i,\ where\ \epsilon_i \geq 0
 \end{aligned}
 $$</p>
 
-Where C an k are constants for balancing the cost of misclassification. If k=1 then loss is named as `Hinge Loss` and if k=2 then it's called `Quadratic Loss`. For example, the figure below displays the hinge loss function($\lambda_i$ represents $w^Tx_i + b$).
+Where C an k are constants for balancing the cost of misclassification. If k=1 then loss is named as `Hinge Loss` and if k=2 then it's called `Quadratic Loss`. For example, the figure below displays the hinge loss function($\lambda_i = w^Tx_i + b$).
 
 ![image](Images/hingeloss.png)
 
