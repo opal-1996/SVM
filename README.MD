@@ -127,7 +127,12 @@ Now suppose we decide to map each data point to a higher dimensional space via s
 
 Example: Quadratic Kernel
 
-For 2-dimensional vectors $\vec{u}=\left(\begin{array}{ll}u_1 & u_2\end{array}\right), \vec{v}=\left(\begin{array}{ll}v_1 & v_2\end{array}\right)$, consider $K(\vec{u}, \vec{v})=\left(1+\vec{u}^T \vec{v}\right)^2$. We wish to show that this is a kernel, i.e., that $K(\vec{u}, \vec{v})=\phi(\vec{u})^T \phi(\vec{v})$ for some $\phi$. 
+For 2-dimensional vectors 
+$\vec{u}=\left(\begin{array}{ll}u_1 & u_2\end{array}\right), \vec{v}=\left(\begin{array}{ll}v_1 & v_2\end{array}\right)$
+, consider 
+$K(\vec{u}, \vec{v})=\left(1+\vec{u}^T \vec{v}\right)^2$
+. We wish to show that this is a kernel, i.e., that 
+$K(\vec{u}, \vec{v})=\phi(\vec{u})^T \phi(\vec{v})$ for some $\phi$. 
 
 Consider $\phi(u) = (1, u_1^2, \sqrt{2}u_1u_2, u_2^2, \sqrt{2}u_1, \sqrt{2}u_2)$. Then:
 
