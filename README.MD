@@ -165,11 +165,10 @@ where d is the degree of the polynomial.
 <p>
 $$
 \begin{aligned}
-k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\exp \left(-\gamma\left\|\mathbf{x}_{\mathbf{i}}-\mathbf{x}_{\mathbf{j}}\right\|^2\right)
+k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\exp \left(-\gamma\left\|\mathbf{x}_{\mathbf{i}}-\mathbf{x}_{\mathbf{j}}\right\|^2\right)\ for\ \gamma > 0
 \end{aligned}
 $$
 </p>
-for $\gamma > 0$.
 
 * Laplace RBF kernel (general-purpose kernel): $k(x, y)=\exp \left(-\frac{\|x-y\|}{\sigma}\right)$
 
@@ -184,7 +183,15 @@ $$
 
 * Sigmoid kernel (used as the proxy for neural networks): $k(x, y)=\tanh \left(\alpha x^T y+c\right)$
 
-* ANOVA RBF (used in regression problems): $k(x, y)=\sum_{k=1}^n \exp \left(-\sigma\left(x^k-y^k\right)^2\right)^d$
+* ANOVA RBF (used in regression problems): 
+<p>
+$$
+\begin{aligned}
+k(x, y)=\sum_{k=1}^n \exp \left(-\sigma\left(x^k-y^k\right)^2\right)^d
+\end{aligned}
+$$
+</p>
+
 
 * Linear splines kernel in one-dimension (used when dealing with large sparse data vectors, often applied in text categorization and regression problems): $k(x, y)=1+x y+x y \min (x, y)-\frac{x+y}{2} \min (x, y)^2+\frac{1}{3} \min (x, y)^3$
 
