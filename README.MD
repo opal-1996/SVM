@@ -153,7 +153,7 @@ k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\left(\mathbf{x}_
 \end{aligned}
 $$
 </p>
-where d is the degree of the polynomial
+where d is the degree of the polynomial.
 
 ![image](Images/polynomial.jpg)
 
@@ -162,11 +162,25 @@ where d is the degree of the polynomial
 ![image](Image/../Images/gaussian.jpeg)
 
 * Gaussian radial basis function (RBF, general-purpose kernel): 
-  $k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\exp \left(-\gamma\left\|\mathbf{x}_{\mathbf{i}}-\mathbf{x}_{\mathbf{j}}\right\|^2\right)$ for $\gamma > 0$
+<p>
+$$
+\begin{aligned}
+k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\exp \left(-\gamma\left\|\mathbf{x}_{\mathbf{i}}-\mathbf{x}_{\mathbf{j}}\right\|^2\right)
+\end{aligned}
+$$
+</p>
+for $\gamma > 0$.
 
 * Laplace RBF kernel (general-purpose kernel): $k(x, y)=\exp \left(-\frac{\|x-y\|}{\sigma}\right)$
 
-* Hyperbolic tangent kernel (used in neural networks): $k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\tanh \left(\kappa \mathbf{x}_{\mathbf{i}} \cdot \mathbf{x}_{\mathbf{j}}+c\right)$
+* Hyperbolic tangent kernel (used in neural networks): 
+<p>
+$$
+\begin{aligned}
+k\left(\mathbf{x}_{\mathbf{i}}, \mathbf{x}_{\mathbf{j}}\right)=\tanh \left(\kappa \mathbf{x}_{\mathbf{i}} \cdot \mathbf{x}_{\mathbf{j}}+c\right)
+\end{aligned}
+$$
+</p>
 
 * Sigmoid kernel (used as the proxy for neural networks): $k(x, y)=\tanh \left(\alpha x^T y+c\right)$
 
